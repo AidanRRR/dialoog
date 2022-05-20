@@ -13,6 +13,7 @@ export const [DialoogProvider, useDialoog] = createDakpan<State>({
     dialogs: [
       ...state.dialogs,
       {
+        id: options?.id || String(++key),
         key: String(++key),
         open: true,
         element,

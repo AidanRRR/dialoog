@@ -8,6 +8,7 @@ export type DialoogProps = {
 };
 
 export type Options = {
+  id: string;
   stack?: string,
   capture?: boolean,
   strict?: boolean,
@@ -16,6 +17,7 @@ export type Options = {
 
 export type State = {
   dialogs: ({
+    id: string,
     key: string,
     open: boolean,
     element: (props: DialoogProps) => ReactNode
